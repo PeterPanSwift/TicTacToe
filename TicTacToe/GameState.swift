@@ -21,14 +21,7 @@ class GameState {
             self == .x ? .blue : .pink
         }
     }
-    
-    struct Move: Identifiable {
-        let id = UUID()
-        let player: Player
-        let position: Int
-        let timestamp: Date
-    }
-    
+
     var board = Array(repeating: "", count: 9)
     var currentPlayer = Player.x
     var winner: Player?
